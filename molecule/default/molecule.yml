@@ -17,8 +17,6 @@ platforms:
     image: ubuntu:21.04
   - name: mint-19.3
     image: linuxmintd/mint19.3-amd64
-  - name: mint-20
-    image: linuxmintd/mint20-amd64
   - name: mint-20.1
     image: linuxmintd/mint20.1-amd64
   - name: debian-stretch
