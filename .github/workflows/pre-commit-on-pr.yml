@@ -1,11 +1,6 @@
 name: lint with pre-commit on PR
 
 on:
-  push:
-    branches:
-      - master
-    tags:
-      - '*.*.*'
   pull_request:
     branches:
       - master
