@@ -51,7 +51,7 @@ Just add to you playbook, to install it on `localhost`:
   gather_facts: true
   become: yes
   tasks:
-    - name: Install XXX client
+    - name: Install XXX
       include_role:
         name: tgagor.XXX
 ```
