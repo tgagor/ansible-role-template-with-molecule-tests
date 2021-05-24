@@ -47,7 +47,7 @@ jobs:
           release_name: Release ${{ steps.tag_version.outputs.new_tag }}
           body: ${{ steps.tag_version.outputs.changelog }}
 
-      - name: Import role to Ansible Galaxy`
+      - name: Upload role to Ansible Galaxy`
         uses: 0x022b/galaxy-role-import-action@v1
         with:
           galaxy_api_key: ${{ secrets.GALAXY_API_KEY }}
