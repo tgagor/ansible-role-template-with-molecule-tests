@@ -1,0 +1,45 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+# lint: |
+#   set -e
+#   pre-commit run -a
+platforms:
+  - name: ubuntu-18.04
+    image: ubuntu:18.04
+  - name: ubuntu-20.04
+    image: ubuntu:20.04
+  - name: ubuntu-20.10
+    image: ubuntu:20.10
+  - name: ubuntu-21.04
+    image: ubuntu:21.04
+  - name: mint-19.3
+    image: linuxmintd/mint19.3-amd64
+  - name: mint-20
+    image: linuxmintd/mint20-amd64
+  - name: mint-20.1
+    image: linuxmintd/mint20.1-amd64
+  - name: debian-stretch
+    image: debian:stretch
+  - name: debian-buster
+    image: debian:buster
+  - name: debian-bullseye
+    image: debian:bullseye
+  - name: centos-7
+    image: centos:7
+  - name: centos-8
+    image: centos:8
+  - name: fedora-32
+    image: fedora:32
+  - name: fedora-33
+    image: fedora:33
+  - name: fedora-34
+    image: fedora:34
+provisioner:
+  name: ansible
+scenario:
+  name: default
+verifier:
+  name: testinfra
