@@ -7,6 +7,15 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
     os.environ['MOLECULE_INVENTORY_FILE']).get_hosts('all')
 
 
+@pytest.mark.parametrize('pkg', [
+    'dummy',
+    'test',
+    'example',
+])
+def test_package_installed(host, pkg):
+    assert host.run(f'echo {pkg}').succeeded
+
+
 # def test_repo_configured(host):
 #     f = None
 #
