@@ -1,4 +1,7 @@
 ---
+- name: example task
+  command: true
+
 # - name: prerequisities
 #   apt:
 #     name:
