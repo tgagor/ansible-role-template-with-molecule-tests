@@ -1,6 +1,7 @@
 ---
 - name: example task
-  command: true
+  command: echo test
+  changed_when: false
 
 # - name: prerequisities
 #   apt:
