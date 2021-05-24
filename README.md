@@ -4,7 +4,15 @@ Ansible role for XXX
 This role will install XXX on compatible platforms.
 
 [![Molecule Test](https://github.com/tgagor/ansible-role-XXX/actions/workflows/test-and-release.yml/badge.svg)](https://github.com/tgagor/ansible-role-XXX/actions/workflows/test-and-release.yml)
-[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-tgagor-XXX.svg)](https://galaxy.ansible.com/tgagor/XXX)
+![Ansible Role](https://img.shields.io/ansible/role/54867)
+![Ansible Quality Score](https://img.shields.io/ansible/quality/54867?label=galaxy%20quality%20score)
+![Ansible Role](https://img.shields.io/ansible/role/d/54867)
+
+Use command below to get role id:
+
+```bash
+ansible-galaxy info tgagor.spotify | grep -E 'id: [0-9]' | awk {'print $2'}
+```
 
 ## Supported systems
 
